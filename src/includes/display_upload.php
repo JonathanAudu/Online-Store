@@ -3,7 +3,7 @@
 try {
     // this runs if the file uploaded is > the post_max__size limit
     if (empty($_FILES)){
-        throw new Exception("Invalid upload");
+        throw new Exception("Wrong upload");
     }
     switch ($_FILES['file']['error']){
         case UPLOAD_ERR_OK:
